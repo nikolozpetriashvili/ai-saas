@@ -44,6 +44,7 @@ const VideoPage = () => {
       if(error?.response?.status === 403){
         proModal.onOpen();
       }
+      console.log(error);
       toast.error("Video error");
     }finally{
       router.refresh();
